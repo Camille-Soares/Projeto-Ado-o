@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#principal{
+ margin: 0 auto;
+ width: 100%;
+ background: #fdff6f;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #fdff6f;
+}
+
+/* Menu */ 
+
+#menu{
+    background: #05AFF2;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#menu img{
+    width: 80px;
+    padding-left: 15px;
+}
+
+.logo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Navegacao */ 
+
+ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     padding: 4em;
+}
+
+
+#menu ul li{
+    float: left;
+}
+
+#menu ul li a{
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    background: #014059;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+#navegacao li a:hover{
+    color: #05AFF2;
+    background: #fdff6f;
+}
+
+#navegacao li a:active{
+    color: red;
+}
+
+/* Conteúdo */
+
+#conteudo{
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px;
+    display: flex;
+    
+     
+}
+#titulo1{
+    text-align: center;
+    margin-top: 2em;
+    flex-direction:column ;
+    clear: both;
+
+}
+
+#postagem{
+    width: 30%;
+    align-items: flex-start;
+    margin: 40px;
+    
+}
+
+#postagem h2{
+    padding: 2em;
+    
+}
+
+#postagem img{
+    width: 300px;
+    border-radius: 30px;
+    background-color: #014059;
+    padding:  0px 0px 10px 10px;
+}
+
+
+/*Introdução*/
+
+#intro{
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+#intro h1{
+    margin: 40px;
+}
+
+#intro img{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+#intro ul li{
+    float: left;
+    padding: 2em 8em 1em 2em;
+    background: #014059;
+    border-radius: 5%;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
+}
+
+/* Rodapé */
+
+#rodape{
+    background: #014059;
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #fff;
+ 
+}
+
+
+/* Media Query */
+
+@media (max-width: 770px) {
+
+   /* Configuração do menu */
+
+   #menu{
+    height: 400%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   #menu ul{
+    flex-wrap: wrap;
+   }
+
+   /*configuração da intro */
+  
+   #intro ul li{
+    flex-wrap: wrap;
+   }
+
+   /* Conteúdo */
+
+   #conteudo{
+    flex-direction: column;
+   }
+   
+   #postagem{
+    display: block;
+    width: 100%;
+    margin: 0;
+   }
+}
